@@ -1,0 +1,801 @@
+body{
+    font-family: 'Montserrat' ;
+    margin: 0;
+    padding: 0;
+}
+
+/* header open*/
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 50px;
+}
+.search input {
+    height: 100%;
+    border: none;
+    padding: 10px 20px;
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    width: 90%;
+}
+input span {
+    object-fit: contain;
+    width: 10px;
+    height: 10px;
+}
+
+header .verified {
+    position: absolute;
+    left: 14%;
+    top: 53%;
+}
+
+header .searchIcon {
+    position: absolute;
+    left: 33%;
+    top: 55%;
+}
+.profile span{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 10px;
+}
+.profile{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.profile .img img{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.profile li{
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header close*/
+/*mainMenu opens*/
+
+#mainMenu .nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+#mainMenu .nav-tabs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    position: relative;
+    padding-bottom: 30px;
+}
+#mainMenu .tab-content ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.girlNeckList li:nth-child(even){
+    overflow: hidden;
+    background-color:#e4d3b7; 
+  
+    padding: 20px;
+}
+.girlNeckList li:nth-child(1){
+    overflow: hidden;
+    padding: 0;
+    background-color:#f4dfbf; 
+}
+.girlNeckList li:nth-child(5){
+    overflow: hidden;
+    background-color:#f4dfbf; 
+    display: flex;
+    align-items: center;
+}
+/* .girlNeckList div{
+    width: 300px;
+    height: 200px;
+}
+.tab-content .girlColor{
+    background-color: #f4dfbf;
+}
+.tab-content .pointedColor{
+    background-color: #f4e4cb;
+}
+.tab-content .pinkColor{
+    background-color: #e4d3b7;
+}
+.tab-content .earingTop{
+    background-color: #f4e4cb;
+}
+.tab-content .earingBottom{
+    background-color: #f4debe;
+} */
+.tab-content .girlNeck{
+    object-fit: contain;
+    width: 360px;
+    height: 570px;
+}
+.tab-content .floatLeft,.floatRight,p{
+    position: relative;
+    padding: 20px;
+}
+.tab-content .pointedNecklace{
+    object-fit: contain;
+    width: 340px;
+    height: 400px;
+}
+.tab-content .pointedList{
+    display: flex;
+    justify-content: space-between;
+}
+/*btnTheme in tab-content*/
+.girlNeckList .btnTheme {
+    width: 50%;
+    height: 8% !important;
+}
+.rockyFonts{
+    background-color: #42464a;
+    text-align: center;
+}
+.rockyFonts h2{
+    font-size: 14px;
+    letter-spacing: 10px;
+    color: #798189;
+}
+.rockyFonts h3{
+    font-family: 'Gambarino';
+    font-size: 50px;
+    color: #afafaf;
+}
+.rockyFonts h4{
+    font-family: 'Gambarino';
+    font-size: 20px;
+    color: #fff;
+    background-color: red;
+    
+}
+.rockyFonts h5{
+    font-size: 100px !important;
+    color: #798189;
+    font-family: 'Stardom' !important;
+}
+.rockyFonts  .btnTheme{
+        border: 3px solid;
+        color: #fff !important;
+       
+}
+.rockyFonts  .btnTheme:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+
+ .rockyFonts .btnTheme::before{
+        background: transparent;
+        color: #ff0000;
+       
+    }
+ .rockyFonts .btnTheme::after{
+        background: transparent;
+        color: red;  
+    }
+
+
+.tab-content .mainLogo{
+    object-fit: contain;
+    width: 260px;
+    height: 135px;
+}
+/*view all*/
+.btnTheme{
+    border: 3px solid;
+    display: inline-block;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.btnTheme:hover{
+    color: #000;
+    text-decoration: none;
+}
+.btnTheme::before{
+    position: absolute;
+    left: -7px;
+    background: #fff;
+    padding: 3px 0px;
+    top: 26%;
+    color: #ff0000;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f45c";
+}
+.btnTheme::after{
+    position: absolute;
+    content: '\f45c';
+    right: -9px;
+    background: white;
+    color: red;
+    padding: 2px 0px;
+    top: 26%;
+    font-weight: 400;
+    font-family: "Font Awesome 6 Free";
+}
+/*view all*/
+
+.tab-content .pinkEarings{
+    object-fit: contain;
+    width: 240px;
+    height: 245px;
+}
+
+.tab-content .earings{
+    object-fit: contain;
+    width: 240px;
+    height: 170px;
+}
+#mainMenu li{
+    list-style: none;
+}
+#mainMenu a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.tab-content h4{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.tab-content h5{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.tab-content h6{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.girlNeckList .floatLeft{
+    float: left;
+}
+.girlNeckList .floatRight{
+    display: inline-block;
+    float: right;
+}
+.girlNeckList p{
+    display: inline-block;
+    width: 100%;
+}
+.girlNeckList li{
+    
+    position: relative;
+    padding: 20px;
+}
+/*mainMenu closed*/
+
+/*section three tabs opens*/
+
+/*findout heading*/
+.findOut{
+    text-align: center;
+}
+.findOut h4{
+    font-size: 14px;
+    letter-spacing: 10px;
+    color: #798189;
+}
+.findOut h2{
+    font-size: 45px;
+    font-family: 'Gambarino';
+}
+/*findout heading closed*/
+#tabs .nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+#tabs .nav-tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    position: relative;
+    padding-bottom: 30px;
+}
+.imgDivs:nth-child(odd) {
+    background-color: #f4e4cb;
+  }
+  
+.imgDivs:nth-child(even) {
+    background-color: #e3dacd;
+  }
+#tabs .tab-content{
+    display: flex;
+}
+.imgDivs{
+    margin:10px 10px;
+    padding: 30px;
+}
+.imgDivs .silverBracelet{
+    object-fit: contain;
+    width:265px;
+    height:90x;
+}
+
+.imgDivs .loveBangle{
+    object-fit: contain;
+    width:240px;
+    height:100x;
+}
+.imgDivs .watch{
+    object-fit: contain;
+    width:190px;
+    height:210px;
+}
+.imgDivs .pinkEarings{
+    object-fit: contain;
+    width:245px;
+    height:120x;
+}
+.imgDivs .blackNecklace{
+    object-fit: contain;
+    width:135px;
+    height:255px;
+}
+.imgDivs .earings{
+    object-fit: contain;
+    width:240px;
+    height:170x;
+}
+.imgDivs .pointed{
+    object-fit: contain;
+    width:220px;
+    height:260px;
+}
+
+.tabsList img{
+    position: relative;
+    padding: 50px 0;
+}
+.tabsList .floatRight {
+    float: right;
+    margin-top: -30px;
+    position: relative;
+}
+/*tabs closed*/
+
+/*shop gold opens*/
+.shopGoldBack{
+    background-image: url('images/shopGoldBack.png');
+    width: 1190px;
+    height: 930px;
+}
+.shopGoldBack .findOut{
+    position: relative;
+    padding-top: 100px;
+}
+.shopGoldBack h2{
+    color: white;
+}
+.goldRow{
+    position: relative;
+    justify-content: center !important;
+}
+.goldList {
+    position: absolute;
+    top: 20%;
+    right: 16%;
+}
+.goldList ul{
+    display: flex;
+    list-style: none;
+}
+.goldList li{
+    height: 540px;
+    position: relative;
+    padding: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+}
+.goldList li:nth-child(odd){
+    background-color: #e3dacd;
+}
+.goldList li:nth-child(even){
+    background-color: #f4e4cb;
+}
+.goldList h4{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.goldList h5{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.goldList h6{
+    font-size: 10px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.floatLeft h6{
+    float: left;
+}
+.goldList .white{
+    color: rgb(190, 29, 29);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+.goldList .black{
+    color: rgb(190, 29, 29);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+.goldImg .loveBangle{
+    object-fit: contain;
+    width: 180px;
+    height: 80px;
+}
+.goldImg .silver{
+    object-fit: contain;
+    width: 180px;
+    height: 80px;
+}
+.goldImg .black{
+    object-fit: contain;
+    width: 180px;
+    height: 80px;
+}
+.goldList .cartIcon{
+   background-color: #fff;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items:center; 
+   width: 30px;
+   height: 30px;
+   
+}
+
+
+/*shop gold closed*/
+
+/*testimonials*/
+#testimonials{
+    position: relative;
+    padding: 30px;
+}
+#testimonials .truck:nth-child(odd){
+    text-align: center;
+    background-color: #b4665c;
+    color: white;
+    font-family: 'Montserrat';
+}
+#testimonials .truck:nth-child(even){
+    text-align: center;
+    background-color: #8b353a;
+    color: white;
+    font-family: 'Montserrat';
+}
+#testimonials .truck{
+    position: relative;
+    padding: 30px;
+}
+
+
+/*testimonial closed*/
+
+
+/*shop by color*/
+#shopByColor{
+    position: relative;
+    padding: 80px 0;
+}
+#shopByColor .row{
+    position: relative;
+}
+#shopByColor .findOut{
+    position: relative;
+    padding: 50px 0;
+}
+.colors small{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.colors large{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100%;
+}
+.colors medium{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+   position: relative;
+   margin-left: 185px;
+}
+.heading h4 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 20px;
+}
+.btns a{
+   margin: 10px 0;
+}
+.spanImages{
+    display: flex;
+}
+.spanImages span:first-child{
+    margin-right: 5px;
+}
+
+
+/*shop by color*/
+/*Gallery Opens*/
+.gallery{
+    position: relative;
+    padding: 30px 0;
+    font-family: 'Montserrat';
+}
+.gallRow{
+    position: relative;
+}
+.gallery .about {
+    background-color: #ecd5b6;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    width: 670px;
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h2{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.about p{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.about .btn{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+.gallery .armlet{
+    width: 400px;
+    height: 530px;
+    margin: 0;
+    padding: 0;
+}
+.gallery .greenLeaf{
+    width: 200px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.pinkShirt {
+    position: absolute;
+    top: 75%;
+    right: 45%;
+    display: flex;
+}
+.pinkShirt .pinky{
+    background-color: #e2d9cc;
+    width: 300px !important;
+    height: 269px !important;
+}
+.pinkShirt .colorBox{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    background-color: #e2d9cc;
+    width: 230px ;
+    height: 269px ;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+
+/*Gallery Closed*/
+
+/*newsLetters*/
+#newsLetters{
+    position: relative;
+    padding-top: 100px;
+}
+.rockyLogo{
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+.rockyLogo h2{
+    font-size: 45px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.rockyLogo p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.rockyLogo input{
+    position: relative;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    padding:10px 40px;
+    width: 30%;
+    color: #b1afaf;
+    font-weight: 600;
+}
+.rockyLogo button{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    padding: 8px 0px;
+    right: 36%;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 10%;
+}
+/*newsLetters closed*/
+
+
+/*instagram*/
+
+#instagram .dresses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dresses img {
+    position: relative;
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
+.instaHashtag{
+    background-color: #8b353a;
+    color: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    padding: 20px;
+    
+}
+.spans span{
+    display: inline-block;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    margin: 30px 0;
+}
+.instaIcon a{
+    font-size: 20px;
+    color: white;
+}
+.instaIcon h4{
+    font-size: 15px;
+}
+/*instagram section closed*/
+
+/*navbar opens*/
+
+#navbar{
+    position: relative;
+}
+.navbarMenu{
+    border-bottom: 1px solid #e9e4e4;   
+}
+.navbar-brand{
+    font-weight: 700;
+}
+.navbar-nav{
+        position: relative;
+        font-size: 18px;
+        color: black;
+        font-weight: 600;
+        font-family: 'Montserrat';
+        display: flex;
+        justify-content: center;
+        align-items:center;
+}
+.nav-link{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav-link i{
+    font-size: 16px;
+}
+.nav-link .searchIcon{
+    position: absolute;
+    top: 26%;
+    right: 1%;
+}
+.nav-link .instaIcon{
+    position: absolute;
+    margin-left: 30px;
+}
+/*navbar closed*/
+
+/*footer*/
+footer{
+    position: relative;
+    padding-top: 20px;
+}
+.footerRow{
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+.copyrights ul{
+    display: flex;
+}
+.footerRow li{
+    font-size: 14px;
+    position: relative;
+    list-style: none;
+    margin-left: -40px;
+    padding-right: 80px;
+}
+.footerRow a{
+    text-decoration: none;
+    color: black;
+}
+.socials ul{
+    display: flex;
+    position: absolute;
+    top: 34%;
+    right: 15%;
+}
+.socials a:hover{
+    color: black;
+}
+
