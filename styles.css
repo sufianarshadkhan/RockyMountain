@@ -367,6 +367,7 @@ header .searchIcon {
     height: 6%;
     padding: 20px;
     margin-bottom: 40px;
+    text-align:center;
 }
 .btnTheme:hover{
     color: #000;
