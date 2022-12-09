@@ -12,13 +12,12 @@ header {
     padding-top: 50px;
 }
 .search input {
-    height: 100%;
+    height: 0%;
     border: none;
-    padding: 10px 20px;
     position: relative;
     font-family: 'Montserrat';
     font-weight: 600;
-    width: 90%;
+    width: 60%;
 }
 input span {
     object-fit: contain;
@@ -47,13 +46,13 @@ header .searchIcon {
 }
 .profile{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
-.profile .img img{
+.profile .nameImg img{
     border-radius: 100%;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 .profile li{
     list-style: none;
@@ -62,10 +61,34 @@ header .searchIcon {
     justify-content: center;
     align-items: center;
 }
+.cart span:first-child  {
+    background: #fff;
+    padding: 9px 14px;
+    border-radius: 100%;
+}
 
+.cart span:first-child  a {
+    color: #000;
+    text-decoration: none;
+}
+
+.cart span:first-child:hover {
+    background: #000;
+    cursor: pointer;
+}
+.cart span:first-child:hover a {
+    color: #fff;
+
+}
 /* header close*/
-/*mainMenu opens*/
 
+/*mainMenu opens*/
+/* .banner{
+    display: flex;
+} */
+#mainMenu{
+    position: relative;
+}
 #mainMenu .nav-link{
     text-decoration: none;
     color: black;
@@ -81,29 +104,203 @@ header .searchIcon {
     position: relative;
     padding-bottom: 30px;
 }
-#mainMenu .tab-content ul{
+.banner .mainDiv{
     display: flex;
     justify-content: space-around;
-    
+    align-items: center;
+    padding:  0;
+    margin: 0;
 }
-
-.girlNeckList li:nth-child(even){
-    overflow: hidden;
-    background-color:#e4d3b7; 
-  
-    padding: 20px;
+.mainDiv .img{
+    padding:  50px 0;
+    margin: 0;
+    text-align: center;
 }
-.girlNeckList li:nth-child(1){
-    overflow: hidden;
-    padding: 0;
-    background-color:#f4dfbf; 
-}
-.girlNeckList li:nth-child(5){
-    overflow: hidden;
-    background-color:#f4dfbf; 
+.mainDiv .imgOne{
+    background-color: #f4e4cb;
+    height: 56vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+.mainDiv .imgTwo {
+    background-color: #f4e4cb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58vh;
+}
+.mainDiv:nth-child(even){
+    overflow: hidden;
+    background-color:#e4d3b7; 
+    
+}
+.mainDiv:nth-child(odd){
+    overflow: hidden;
+    background-color:#f4dfbf; 
+}
+.mainDiv h4{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+}
+.mainDiv h5{
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+}
+.mainDiv h6{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+}
+.mainDiv .details{
+    padding: 20px;
+}
+.mainDiv .reviews{
+    padding: 20px;
+}
+.mainDiv .detailOne{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.mainDiv .reviewOne{
+    float: right;
+}
+.rockyFonts{
+    position: relative;
+    background-color: #42464a;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.rockyFonts .btnTheme {
+    width: 50% !important;
+    height: 10% !important;
+    border: 3px solid;
+    color: #fff !important;
+    position: absolute;
+    left: 26%;
+    bottom: -1%;
+}
+
+.rockyFonts  .btnTheme:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.rockyFonts .btnTheme::before{
+    background: transparent;
+    color: #ff0000;
+   
+}
+.rockyFonts .btnTheme::after{
+    background: transparent;
+    color: red;  
+}
+
+.rockyFonts h2{
+    font-size: 14px;
+    letter-spacing: 10px;
+    color: #798189;
+}
+.rockyFonts h3{
+    font-family: 'Gambarino';
+    font-size: 50px;
+    color: #fff;
+}
+.rockyFonts h4{
+    font-family: 'Gambarino';
+    font-size: 20px;
+    color: #fff;
+    background-color: red;
+    
+}
+.rockyFonts h5{
+    font-size: 100px !important;
+    color: #fff;
+    font-family: 'Stardom' !important;
+}
+
+/* .mainDiv li:nth-child(3){
+    overflow: hidden;
+    background-color:#f4dfbf; 
+
+} */
+#mainMenu li{
+    list-style: none;
+}
+#mainMenu a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.imgDivs {
+    padding: 40px 0px;
+    margin: calc(var(--bs-gutter-x) * .5) 0px;
+    position: relative;
+}
+.imgDivs:nth-child(odd) {
+    background-color: #f4e4cb;
+    overflow: hidden;
+   
+}
+  
+.imgDivs:nth-child(even) {
+    background-color: #cac6c0;
+    overflow: hidden;
+  
+}
+
+.imgDivs img{
+    /* width: 100%; */
+    /* min-height:300px; */
+    padding: 60px 0px;
+}
+.imgDivs h4{
+    font-size: 15px;
+    padding-left: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+}
+.imgDivs h5{
+    font-size: 13px;
+    padding-left: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+}
+.imgDivs h6{
+    font-size: 14px;
+    padding-left: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600 !important;
+}
+.imgDivs .shoppingIcon {
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+    background: #fff;
+    padding: 9px 14px;
+    border-radius: 100%;
+}
+
+.imgDivs .shoppingIcon a {
+    color: #000;
+}
+
+.imgDivs .shoppingIcon:hover {
+    background: #000;
+    cursor: pointer;
+}
+.imgDivs .shoppingIcon:hover a {
+    color: #fff;
+
+}
+
 /* .girlNeckList div{
     width: 300px;
     height: 200px;
@@ -123,7 +320,7 @@ header .searchIcon {
 .tab-content .earingBottom{
     background-color: #f4debe;
 } */
-.tab-content .girlNeck{
+/* .tab-content .girlNeck{
     object-fit: contain;
     width: 360px;
     height: 570px;
@@ -140,88 +337,46 @@ header .searchIcon {
 .tab-content .pointedList{
     display: flex;
     justify-content: space-between;
-}
+} */
 /*btnTheme in tab-content*/
-.girlNeckList .btnTheme {
-    width: 50%;
-    height: 8% !important;
-}
-.rockyFonts{
-    background-color: #42464a;
-    text-align: center;
-}
-.rockyFonts h2{
-    font-size: 14px;
-    letter-spacing: 10px;
-    color: #798189;
-}
-.rockyFonts h3{
-    font-family: 'Gambarino';
-    font-size: 50px;
-    color: #afafaf;
-}
-.rockyFonts h4{
-    font-family: 'Gambarino';
-    font-size: 20px;
-    color: #fff;
-    background-color: red;
-    
-}
-.rockyFonts h5{
-    font-size: 100px !important;
-    color: #798189;
-    font-family: 'Stardom' !important;
-}
-.rockyFonts  .btnTheme{
-        border: 3px solid;
-        color: #fff !important;
-       
-}
-.rockyFonts  .btnTheme:hover{
-        color: #fff;
-        text-decoration: none;
-    }
-
- .rockyFonts .btnTheme::before{
-        background: transparent;
-        color: #ff0000;
-       
-    }
- .rockyFonts .btnTheme::after{
-        background: transparent;
-        color: red;  
-    }
 
 
-.tab-content .mainLogo{
+
+/* .tab-content .mainLogo{
     object-fit: contain;
     width: 260px;
     height: 135px;
-}
+} */
 /*view all*/
 .btnTheme{
-    border: 3px solid;
-    display: inline-block;
-    position: relative;
+    font-family: 'Montserrat';
+    letter-spacing: 6px;
+    font-weight: bold;
+    border: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     color: #000;
+    right: 44%;
+    bottom: 0%;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    width: 12%;
+    height: 6%;
     padding: 20px;
+    margin-bottom: 40px;
 }
 .btnTheme:hover{
     color: #000;
-    text-decoration: none;
+    background: #000(240, 166, 166);
 }
 .btnTheme::before{
     position: absolute;
-    left: -7px;
-    background: #fff;
+    left: -8px;
     padding: 3px 0px;
-    top: 26%;
+    top: 34%;
     color: #ff0000;
     font-family: "Font Awesome 6 Free";
     font-weight: 400;
@@ -230,17 +385,25 @@ header .searchIcon {
 .btnTheme::after{
     position: absolute;
     content: '\f45c';
-    right: -9px;
-    background: white;
+    right: -15px;
     color: red;
     padding: 2px 0px;
-    top: 26%;
+    top: 34%;
     font-weight: 400;
     font-family: "Font Awesome 6 Free";
+    /* margin-top: 2px; */
+}
+.btnTheme:hover::before{
+
+    background:transparent;
+}
+.btnTheme:hover::after{
+  
+    background:transparent;
 }
 /*view all*/
 
-.tab-content .pinkEarings{
+/* .tab-content .pinkEarings{
     object-fit: contain;
     width: 240px;
     height: 245px;
@@ -250,32 +413,10 @@ header .searchIcon {
     object-fit: contain;
     width: 240px;
     height: 170px;
-}
-#mainMenu li{
-    list-style: none;
-}
-#mainMenu a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-}
-.tab-content h4{
-    font-size: 15px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-}
-.tab-content h5{
-    font-size: 13px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-}
-.tab-content h6{
-    font-size: 14px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-}
-.girlNeckList .floatLeft{
+} */
+
+
+/* .girlNeckList .floatLeft{
     float: left;
 }
 .girlNeckList .floatRight{
@@ -290,11 +431,14 @@ header .searchIcon {
     
     position: relative;
     padding: 20px;
-}
+} */
 /*mainMenu closed*/
 
 /*section three tabs opens*/
-
+#tabs{
+    position: relative;
+    padding: 200px 0;
+}
 /*findout heading*/
 .findOut{
     text-align: center;
@@ -324,27 +468,13 @@ header .searchIcon {
     position: relative;
     padding-bottom: 30px;
 }
-.imgDivs:nth-child(odd) {
-    background-color: #f4e4cb;
-  }
-  
-.imgDivs:nth-child(even) {
-    background-color: #e3dacd;
-  }
-#tabs .tab-content{
-    display: flex;
-}
-.imgDivs{
-    margin:10px 10px;
-    padding: 30px;
-}
-.imgDivs .silverBracelet{
-    object-fit: contain;
-    width:265px;
-    height:90x;
-}
 
-.imgDivs .loveBangle{
+/* #tabs .tab-content{
+    display: flex;
+} */
+
+
+/* .imgDivs .loveBangle{
     object-fit: contain;
     width:240px;
     height:100x;
@@ -373,108 +503,77 @@ header .searchIcon {
     object-fit: contain;
     width:220px;
     height:260px;
-}
+} */
 
-.tabsList img{
+/* .tabsList img{
     position: relative;
     padding: 50px 0;
 }
 .tabsList .floatRight {
     float: right;
-    margin-top: -30px;
+    margin-top: -50px;
     position: relative;
-}
+} */
 /*tabs closed*/
 
 /*shop gold opens*/
-.shopGoldBack{
-    background-image: url('images/shopGoldBack.png');
-    width: 1190px;
-    height: 930px;
-}
-.shopGoldBack .findOut{
+#shopGold{
     position: relative;
-    padding-top: 100px;
+}
+.shopGoldBack{
+    background: url('images/shopGoldBack.png') center center;
+    height: 80vh;
+    background-attachment: fixed;
+    background-size: contain;
+}   
+.shopGoldBack .findOut{
+    padding-top: 70px;
 }
 .shopGoldBack h2{
     color: white;
 }
 .goldRow{
-    position: relative;
-    justify-content: center !important;
+    font-family: 'Montserrat';
 }
-.goldList {
+.goldList{
     position: absolute;
-    top: 20%;
-    right: 16%;
+    top: 200px;
 }
-.goldList ul{
-    display: flex;
-    list-style: none;
+.goldListTwo {
+    position: absolute;
+    top: 200px;
 }
-.goldList li{
-    height: 540px;
-    position: relative;
-    padding: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: column;
-}
-.goldList li:nth-child(odd){
+/* .goldList .imgDivs{
+    margin:0 10px;
+    
+}  */
+ 
+/* .goldList div:nth-child(odd){
     background-color: #e3dacd;
 }
-.goldList li:nth-child(even){
+.goldList div:nth-child(even){
     background-color: #f4e4cb;
-}
+} */
 .goldList h4{
     font-size: 14px;
-    font-family: 'Montserrat';
     font-weight: 600;
 }
 .goldList h5{
     font-size: 13px;
-    font-family: 'Montserrat';
     font-weight: 600;
 }
 .goldList h6{
     font-size: 10px;
-    font-family: 'Montserrat';
     font-weight: 600;
 }
-.floatLeft h6{
+/* .floatLeft h6{
     float: left;
-}
-.goldList .white{
-    color: rgb(190, 29, 29);
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    display: block;
-}
-.goldList .black{
-    color: rgb(190, 29, 29);
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    display: block;
-}
+} */
 
-.goldImg .loveBangle{
-    object-fit: contain;
-    width: 180px;
-    height: 80px;
-}
-.goldImg .silver{
-    object-fit: contain;
-    width: 180px;
-    height: 80px;
-}
-.goldImg .black{
-    object-fit: contain;
-    width: 180px;
-    height: 80px;
-}
-.goldList .cartIcon{
+
+
+
+/* .goldList .cartIcon{
    background-color: #fff;
    border-radius: 100%;
    display: flex;
@@ -483,7 +582,7 @@ header .searchIcon {
    width: 30px;
    height: 30px;
    
-}
+} */
 
 
 /*shop gold closed*/
@@ -519,9 +618,9 @@ header .searchIcon {
     position: relative;
     padding: 80px 0;
 }
-#shopByColor .row{
+/* #shopByColor .row{
     position: relative;
-}
+} */
 #shopByColor .findOut{
     position: relative;
     padding: 50px 0;
@@ -548,18 +647,93 @@ header .searchIcon {
     height: 30px;
     background-color: black;
     border-radius: 100%;
-   position: relative;
-   margin-left: 185px;
+    position: relative;
+    margin-left: 185px;
 }
 .heading h4 {
     font-size: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
+    text-align: center;
+    
+}
+.circle .btns{
+    margin: 30px 90px;
     position: relative;
-    padding-left: 20px;
+    width: 100%;
+}  
+ 
+.circle .btnTheme{
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 3px solid #000;
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    /* padding: 20px; 
+    margin-bottom: 20px;  */
 }
-.btns a{
-   margin: 10px 0;
+.circle .btnTheme:hover{
+    color: #000;
+    background: #000(240, 166, 166);
 }
+.circle .btnTheme::before{
+    position: absolute;
+    left: -8px;
+    padding: 3px 0px;
+    top: 30%;
+    color: #ff0000;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f45c";
+}
+.circle .btnTheme::after{
+    position: absolute;
+    content: '\f45c';
+    right: -10px;
+    color: red;
+    padding: 2px 0px;
+    top: 30%;
+    font-weight: 400;
+    font-family: "Font Awesome 6 Free";
+    /* margin-top: 2px; */
+}
+/* .btns .btnTheme{
+    text-decoration: none;
+    border: 2px solid #000;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    padding: 20px;
+}
+.btns .btnTheme::before {
+    position: absolute;
+    left: -6px;
+    padding: 3px 0px;
+    top: 15%;
+    color: #ff0000;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f45c";
+}
+.btns .btnTheme::after {
+    position: absolute;
+    content: '\f45c';
+    right: -8px;
+    color: red;
+    padding: 2px 0px;
+    top: 16%;
+    font-weight: 400;
+    font-family: "Font Awesome 6 Free";
+     margin-top: 2px; 
+}
+*/ 
 .spanImages{
     display: flex;
 }
@@ -568,7 +742,9 @@ header .searchIcon {
 }
 
 
-/*shop by color*/
+/*shop by color closed*/
+
+
 /*Gallery Opens*/
 .gallery{
     position: relative;
@@ -647,7 +823,8 @@ header .searchIcon {
 /*newsLetters*/
 #newsLetters{
     position: relative;
-    padding-top: 100px;
+    padding-top: 200px;
+    font-family: 'Montserrat';
 }
 .rockyLogo{
     text-align: center;
@@ -663,11 +840,25 @@ header .searchIcon {
     font-family: 'Montserrat';
     font-weight: 600;
 }
+#newsLetters form{
+    overflow: hidden;
+}
+/* .emailInput:hover button{
+    transform: translateY(0%) translateX(-196%);
+   transition: all 1s ease;
+  
+} */
+/* .emailInput:hover, -webkit-input-placeholder{
+    transform: translateX(60%);
+   transition: all 1s ease;
+  
+} */
+
 .rockyLogo input{
-    position: relative;
+    
     border: 1px solid #ebebeb;
     border-radius: 20px;
-    padding:10px 40px;
+    padding:10px 20px;
     width: 30%;
     color: #b1afaf;
     font-weight: 600;
@@ -677,11 +868,11 @@ header .searchIcon {
     color: white;
     font-weight: 600;
     position: absolute;
-    padding: 8px 0px;
-    right: 36%;
-    overflow: hidden;
-    border-radius: 10px;
+    padding: 10px 0px;
+    right: 35%;
     width: 10%;
+    border: none;
+    border-radius: 20px;
 }
 /*newsLetters closed*/
 
@@ -701,27 +892,32 @@ header .searchIcon {
     height: 200px;
 }
 .instaHashtag{
-    background-color: #8b353a;
-    color: white;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    padding: 20px;
-    
+    background-color: #8b353a;  
+    min-height: 259px;
+  
 }
-.spans span{
-    display: inline-block;
-    background-color: white;
-    width: 10px;
-    height: 10px;
-    position: relative;
-    margin: 30px 0;
-}
-.instaIcon a{
-    font-size: 20px;
+
+.spans i{
+    border-radius: 100%;
     color: white;
 }
-.instaIcon h4{
+.instaHashtag a{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    display: block;
+    position: relative;
+}
+.instaHashtag i{
+   padding:20px 0;
+}
+.instaHashtag a:hover{
+    color: white;
+}
+.instaHashtag .fa-brands{
+    font-size: 45px;
+}
+.instaHashtag h4{
     font-size: 15px;
 }
 /*instagram section closed*/
@@ -738,31 +934,43 @@ header .searchIcon {
     font-weight: 700;
 }
 .navbar-nav{
-        position: relative;
-        font-size: 18px;
-        color: black;
-        font-weight: 600;
-        font-family: 'Montserrat';
-        display: flex;
-        justify-content: center;
-        align-items:center;
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
-.nav-link{
-    margin-left: 20px;
+#navbar .nav-link{
+    margin-left: 50px;
     font-size: 14px;
 }
-
-.nav-link i{
-    font-size: 16px;
+.nav-link .search{
+    position: relative;
 }
-.nav-link .searchIcon{
+.search .verifiedBottom {
+    object-fit: contain;
+    width: 10px;
+    height: 10px;
     position: absolute;
-    top: 26%;
+    top: 30%;
+}
+
+.search p { 
+position: relative;
+    
+padding: 12px 30px 0;
+}
+.searchIcon i{
+    position: absolute;
+    top: 45%;
     right: 1%;
 }
-.nav-link .instaIcon{
-    position: absolute;
-    margin-left: 30px;
+.nav-link .fa-instagram{
+    /* position: relative; */
+    padding-left: -10px;
 }
 /*navbar closed*/
 
@@ -789,13 +997,14 @@ footer{
     text-decoration: none;
     color: black;
 }
+.footerRow a:hover{
+    color: #8b353a;
+}
 .socials ul{
     display: flex;
     position: absolute;
     top: 34%;
     right: 15%;
 }
-.socials a:hover{
-    color: black;
-}
+
 
